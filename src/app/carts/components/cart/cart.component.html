@@ -1,0 +1,49 @@
+<div class="cartBox" >
+    <h1 class="text-danger">Shopping Cart</h1>
+    <div class="headcart">
+        <p class="lead">You have <label class="text-danger">{{cartProducts.length}}</label> item in your cart</p>
+        <span class="text-danger card-header" (click)="clearCart()">Clear shopping cart</span>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Price</th>
+                <th style="width: 25%;"> Quantity</th>
+                <th>Total</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr *ngFor="let it of cartProducts; let index = index">
+                <td><img src="{{it.item.image}}" alt=""></td>
+                <td>{{it.item.title}}</td>
+                <td>{{it.item.price}}L.E</td>
+                <td>
+                    <div class="qun">
+                        <button class="btn btn-dark" (click)="plusAmount(index)">+</button>
+                        <input type="number" class="form-control" (change)="detectChange()" [(ngModel)]="it.quantity"
+                            min="1">
+                        <button class="btn btn-dark" (click)="minsAmount(index)">-</button>
+                    </div>
+                </td>
+                <td>{{it.item.price * it.quantity}} L.E</td>
+                <td>
+                    <button class="btn btn-danger" (click)="deleteProdect(index)"> Delete</button>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot class="text-center">
+            <tr >
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>Total : {{total}} L.E</th>
+                <th><button class="btn btn-success" (click)="addcart()">Order Now</button></th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<div class="al alert alert-success" role="alert" *ngIf="success"> <strong>Well Order is Successfully Send</strong></div>
