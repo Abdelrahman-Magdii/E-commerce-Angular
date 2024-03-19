@@ -11,7 +11,7 @@
 
 
 -->
-
+<!-- 
 
 <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
@@ -19,22 +19,50 @@
         <h2 class="logo pl-0"> Market</h2>
 
         <div class="collapse navbar-collapse" id="main">
-            <ul class="nav nav-tabs">
+            <ul class="nav">
                 <li class="nav-item">
-                    <a routerLink="/products" class="nav-link active" href="#">products</a>
+                    <a routerLink="/products"  href="#">products</a>
                 </li>
                 <li class="nav-item">
-                    <a routerLink="/cart" class="nav-link" href="#">cart</a>
+                    <a routerLink="/cart" href="#">cart</a>
                 </li>
                 <li class="nav-item">
-                    <a routerLink="/adminproduct" class="nav-link" href="#">Admin product</a>
+                    <a routerLink="/adminproduct" href="#">AdminProduct</a>
                 </li>
                 <li class="nav-item">
-                    <a routerLink="/admincart"  class="nav-link ">Admin cart</a>
+                    <a routerLink="/admincart" >AdminCart</a>
                 </li>
             </ul>
         </div>
     </div>
+    </div>
+</nav> -->
+
+
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <h2 class="logo pl-0">Market</h2>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/products" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/cart" href="#">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/adminproduct" href="#">Admin Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/admincart" href="#">Admin Cart</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 

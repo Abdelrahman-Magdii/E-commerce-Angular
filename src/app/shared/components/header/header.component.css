@@ -2,8 +2,9 @@
 a{
     cursor: pointer;
     font-size: 22px;
-    color: #fff;
+    color: #1f1a1a;
     text-decoration: none;
+    margin-left: 10px;
 } 
 
 
@@ -16,7 +17,7 @@ a{
 
 
 .navbar .navbar-nav .nav-link {
-    color: #fff;
+    color: #1f1a1a;
 }
 
 .content{
@@ -34,9 +35,9 @@ a{
 
 
 .navbar .navbar-toggler {
-    color: white;
+    color: #1f1a1a;
     font-size: 25px;
-    border-color: white;
+    border-color: #1f1a1a;
 }
 
 .navbar .navbar-toggler:focus {
