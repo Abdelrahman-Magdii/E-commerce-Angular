@@ -10,7 +10,6 @@ import { SelectComponent } from './components/select/select.component';
 import { ProductComponent } from '../products/components/product/product.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductsDetailsComponent } from '../products/components/products-details/products-details.component';
-import { AdminProductsComponent } from '../admin-products/components/admin-products/admin-products.component';
 
 @NgModule({
   declarations: [

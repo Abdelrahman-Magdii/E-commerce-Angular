@@ -14,7 +14,6 @@ import { BrowserModule } from '@angular/platform-browser';
     CommonModule, 
     SharedModule,
     BrowserModule,
-
   ],
 })
 export class ProductsModule {}
